@@ -1,0 +1,88 @@
+<style>
+    body, html {
+        height: 100%;
+    }
+    
+    body {
+        background: url("interior3.jpg") rgba(77, 57, 50, 0.55) no-repeat center fixed;
+        background-blend-mode: multiply;
+    }
+
+    .center-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #f7f4f3;
+        text-shadow: 0px 0px 10px #000;
+    }
+
+    h1 {
+        font-family: 'Spectral', serif;
+        font-size: 70px;
+        margin: -35px;
+    }
+
+    p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    button {
+        font-family: 'Work Sans', sans-serif;
+        color: #FFF;
+        text-shadow: 0px 0px 5px #000;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: solid 1px #FFF;
+        padding: 10px 50px;
+
+    }
+
+    button:hover {
+        background-color: rgba(255, 255, 255, 0.5)
+    }
+
+    header {
+        font-family: 'Work Sans', sans-serif;
+        color: #000;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        background-color: #f1f1f1;
+        opacity: 0.90;
+        text-align: right;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .nav-bar a{
+        padding: 5px 75px 15px 75px;
+        margin: 0px 1px 0px 1px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .nav-bar a:hover{
+        background-color: #d3cbcb;
+        letter-spacing: 5px;
+    }
+
+    footer {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .copyright {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+    }
+</style>
