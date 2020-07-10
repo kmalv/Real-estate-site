@@ -1,14 +1,14 @@
 <style>
     body, html {
-        height: 100%;
+        min-height: 100%;
     }
     
     body {
-        background: url("interior3.jpg") rgba(77, 57, 50, 0.55) no-repeat center fixed;
+        background: url("images/interior3.jpg") rgba(77, 57, 50, 0.549) no-repeat center fixed;
         background-blend-mode: multiply;
     }
 
-    .center-text {
+    #main {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -18,18 +18,18 @@
         text-shadow: 0px 0px 10px #000;
     }
 
-    h1 {
+    #main > h1 {
         font-family: 'Spectral', serif;
         font-size: 70px;
         margin: -35px;
     }
 
-    p {
+    #main p {
         font-family: 'Work Sans', sans-serif;
         font-size: 25px;
     }
 
-    button {
+    #main button {
         font-family: 'Work Sans', sans-serif;
         color: #FFF;
         text-shadow: 0px 0px 5px #000;
@@ -39,7 +39,7 @@
 
     }
 
-    button:hover {
+    #main > button:hover {
         background-color: rgba(255, 255, 255, 0.5)
     }
 
@@ -48,28 +48,33 @@
         color: #000;
     }
 
-    .nav-bar {
+    #nav-bar {
         position: fixed;
         top: 0px;
         width: 100%;
         padding: 10px 10px 10px 10px;
         background-color: #f1f1f1;
         opacity: 0.90;
-        text-align: right;
     }
 
-    .logo {
+    #logo {
         float: left;
     }
 
-    .nav-bar a{
-        padding: 5px 75px 15px 75px;
-        margin: 0px 1px 0px 1px;
+    #links {
+        float: right;
+        text-align: center;
+        margin: 0% 5% 0% 0%;
+    }
+
+    #links a {
         color: #000;
+        padding: 5px 10px;
+        margin: 0px 10px;
         text-decoration: none;
     }
 
-    .nav-bar a:hover{
+    #links a:hover{
         background-color: #d3cbcb;
         letter-spacing: 5px;
     }
@@ -80,7 +85,7 @@
         color: #FFF;
     }
 
-    .copyright {
+    #copyright {
         position: fixed;
         bottom: 10px;
         width: 100%;
