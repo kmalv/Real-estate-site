@@ -4,8 +4,22 @@
     }
     
     body {
-        background: url("images/interior3.jpg") rgba(77, 57, 50, 0.549) no-repeat center fixed;
-        background-blend-mode: multiply;
+        animation: backgroundTransition 15s infinite alternate;
+    }
+
+    @keyframes backgroundTransition {
+        0% {
+            background: url("images/interior.jpeg") rgba(77, 57, 50, 0.7) no-repeat center fixed;
+            background-blend-mode: multiply;
+        }
+        50% {
+            background: url("images/interior2.jpg") rgba(77, 57, 50, 0.7) no-repeat center fixed;
+            background-blend-mode: multiply;
+        }
+        100% {
+            background: url("images/exterior.jpg") rgba(77, 57, 50, 0.7) no-repeat center fixed;
+            background-blend-mode: multiply;
+        }
     }
 
     #main {
@@ -36,6 +50,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         border: solid 1px #FFF;
         padding: 10px 50px;
+        transition: 0.3s;
 
     }
 
@@ -72,6 +87,7 @@
         padding: 5px 10px;
         margin: 0px 10px;
         text-decoration: none;
+        transition: 0.3s;
     }
 
     #links a:hover{
